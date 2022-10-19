@@ -1,6 +1,6 @@
 # Log In With Auth0
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/lodge104/oauth-auth0.svg)](https://packagist.org/packages/lodge104/oauth-auth0) [![Total Downloads](https://img.shields.io/packagist/dt/lodge104/oauth-auth0.svg)](https://packagist.org/packages/lodge104/oauth-auth0)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/lodge104/flarum-ext-oauth-auth0.svg)](https://packagist.org/packages/lodge104/flarum-ext-oauth-auth0) [![Total Downloads](https://img.shields.io/packagist/dt/lodge104/flarum-ext-oauth-auth0.svg)](https://packagist.org/packages/lodge104/flarum-ext-oauth-auth0)
 
 A [Flarum](http://flarum.org) extension. Log in to your Flarum forum with Auth0. An addon for [FoF OAuth](https://github.com/friendsofflarum/oauth)
 
@@ -9,13 +9,13 @@ A [Flarum](http://flarum.org) extension. Log in to your Flarum forum with Auth0.
 Install with composer:
 
 ```sh
-composer require lodge104/oauth-auth0:"*"
+composer require lodge104/flarum-ext-oauth-auth0:"*"
 ```
 
 ## Updating
 
 ```sh
-composer update lodge104/oauth-auth0
+composer update lodge104/flarum-ext-oauth-auth0
 ```
 
 ## Setup
@@ -25,6 +25,5 @@ composer update lodge104/oauth-auth0
 
 ## Links
 
-- [Packagist](https://packagist.org/packages/lodge104/oauth-auth0)
+- [Packagist](https://packagist.org/packages/lodge104/flarum-ext-oauth-auth0)
 - [GitHub](https://github.com/lodge104/flarum-ext-oauth-auth0)
-- [Discuss](https://discuss.flarum.org/d/29191)
