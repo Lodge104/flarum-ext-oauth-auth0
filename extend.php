@@ -1,19 +1,19 @@
 <?php
 
 /*
- * This file is part of ianm/oauth-amazon.
+ * This file is part of lodge104/oauth-auth0.
  *
- * Copyright (c) 2021 IanM.
+ * Copyright (c) 2022 Lodge104.
  *
  *  For the full copyright and license information, please view the LICENSE.md
  *  file that was distributed with this source code.
  */
 
-namespace IanM\OAuthAmazon;
+namespace Lodge104\OAuthAuth0;
 
 use Flarum\Extend;
 use FoF\OAuth\Extend as OAuthExtend;
-use IanM\OAuthAmazon\Providers\Amazon;
+use Lodge104\OAuthAuth0\Providers\Auth0;
 
 return [
     (new Extend\Frontend('forum'))
@@ -24,5 +24,5 @@ return [
 
     new Extend\Locales(__DIR__.'/locale'),
 
-    (new OAuthExtend\RegisterProvider(Amazon::class)),
+    (new OAuthExtend\RegisterProvider(Auth0::class)),
 ];

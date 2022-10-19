@@ -1,6 +1,6 @@
 import app from 'flarum/admin/app';
-import AmazonOAuthPage from './components/AmazonOAuthPage';
+import Auth0OAuthPage from './components/Auth0OAuthPage';
 
-app.initializers.add('ianm/oauth-amazon', () => {
-  app.extensionData.for('ianm-oauth-amazon').registerPage(AmazonOAuthPage);
+app.initializers.add('lodge104/oauth-auth0', () => {
+  app.extensionData.for('lodge104-oauth-auth0').registerPage(Auth0OAuthPage);
 });

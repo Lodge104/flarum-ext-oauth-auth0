@@ -1,38 +1,37 @@
 {
-    "name": "ianm/oauth-amazon",
-    "description": "Log in to your Flarum forum with Amazon",
+    "name": "lodge104/flarum-ext-oauth-auth0",
+    "description": "Log in to your Flarum forum with Auth0",
     "keywords": [
-        "flarum", "amazon", "sso", "oauth", "login"
+        "flarum", "auth0", "sso", "oauth", "login"
     ],
     "type": "flarum-extension",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/imorland/flarum-ext-oauth-amazon/issues",
-        "source": "https://github.com/imorland/flarum-ext-oauth-amazon",
-        "forum": "https://discuss.flarum.org/d/29191"
+        "issues": "https://github.com/Lodge104/flarum-ext-oauth-auth0/issues",
+        "source": "https://github.com/Lodge104/flarum-ext-oauth-auth0/"
     },
     "require": {
         "flarum/core": "^1.2.0",
         "fof/oauth": "^1.1.0",
-        "luchianenco/oauth2-amazon": "^2.0"
+        "riskio/oauth2-auth0": "^2.4.1"
     },
     "authors": [
         {
-            "name": "IanM",
-            "homepage": "https://discuss.flarum.org/u/ianm"
+            "name": "Nicholas Anderson",
+            "homepage": "https://hey.blue"
         }
     ],
     "autoload": {
         "psr-4": {
-            "IanM\\OAuthAmazon\\": "src/"
+            "Lodge104\\OAuthAuth0\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "Log In With Amazon",
+            "title": "Log In With Auth0",
             "category": "feature",
             "icon": {
-                "name": "fab fa-amazon",
+                "name": "fas fa-users",
                 "backgroundColor": "#0072e3",
                 "color": "#fff"
             }

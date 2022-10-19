@@ -1,5 +1,5 @@
 {
-  "name": "@ianm/oauth-amazon",
+  "name": "@lodge104/oauth-auth0",
   "version": "0.0.0",
   "private": true,
   "prettier": "@flarum/prettier-config",

@@ -1,36 +1,36 @@
 <?php
 
 /*
- * This file is part of ianm/oauth-amazon.
+ * This file is part of lodge104/oauth-auth0.
  *
- * Copyright (c) 2021 IanM.
+ * Copyright (c) 2022 Lodge104.
  *
  *  For the full copyright and license information, please view the LICENSE.md
  *  file that was distributed with this source code.
  */
 
-namespace IanM\OAuthAmazon\Providers;
+namespace Lodge104\OAuthAuth0\Providers;
 
 use Flarum\Forum\Auth\Registration;
 use FoF\OAuth\Provider;
 use League\OAuth2\Client\Provider\AbstractProvider;
-use Luchianenco\OAuth2\Client\Provider\Amazon as AmazonProvider;
+use Riskio\OAuth2\Client\Provider\Auth0 as Auth0Provider;
 
-class Amazon extends Provider
+class Auth0 extends Provider
 {
     /**
-     * @var AmazonProvider
+     * @var Auth0Provider
      */
     protected $provider;
 
     public function name(): string
     {
-        return 'amazon';
+        return 'auth0';
     }
 
     public function link(): string
     {
-        return 'https://developer.amazon.com/docs/login-with-amazon/register-web.html';
+        return 'https://auth0.com/docs/get-started/applications/application-settings';
     }
 
     public function fields(): array
@@ -38,12 +38,14 @@ class Amazon extends Provider
         return [
             'client_id'     => 'required',
             'client_secret' => 'required',
+            'custom_domain' => 'required',
         ];
     }
 
     public function provider(string $redirectUri): AbstractProvider
     {
-        return $this->provider = new AmazonProvider([
+        return $this->provider = new Auth0Provider([
+            'customDomain' => $this->getSetting('custom_domain'),
             'clientId'     => $this->getSetting('client_id'),
             'clientSecret' => $this->getSetting('client_secret'),
             'redirectUri'  => $redirectUri,
